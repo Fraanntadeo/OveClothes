@@ -1,0 +1,121 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Remera Oversize Algodón",
+      "price": 18500,
+      "category": "Remeras",
+      "isNew": true,
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/remera-oversize.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Buzo Hoodie Básico",
+      "price": 32000,
+      "category": "Buzos",
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/buzo-hoodie.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Pantalón Cargo Wide",
+      "price": 38500,
+      "category": "Pantalones",
+      "sizes": ["28", "30", "32", "34", "36"],
+      "image": "/productos/pantalon-cargo.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Campera Rompevientos",
+      "price": 45000,
+      "originalPrice": 55000,
+      "category": "Camperas",
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/campera-rompevientos.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Bermuda Urbana",
+      "price": 22000,
+      "category": "Shorts",
+      "isNew": true,
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/bermuda-urbana.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Remera Estampada Logo",
+      "price": 19500,
+      "category": "Remeras",
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/remera-logo.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Jogger Frisa Premium",
+      "price": 28000,
+      "category": "Pantalones",
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/jogger-frisa.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Musculosa Básica",
+      "price": 12500,
+      "originalPrice": 15000,
+      "category": "Remeras",
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/musculosa.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Buzo Cuello Redondo",
+      "price": 29000,
+      "category": "Buzos",
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/buzo-cuello.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Jean Mom Fit",
+      "price": 42000,
+      "category": "Pantalones",
+      "isNew": true,
+      "sizes": ["24", "26", "28", "30", "32"],
+      "image": "/productos/jean-mom.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Campera Jean Oversize",
+      "price": 52000,
+      "category": "Camperas",
+      "sizes": ["S", "M", "L"],
+      "image": "/productos/campera-jean.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Set Deportivo Básico",
+      "price": 48000,
+      "originalPrice": 58000,
+      "category": "Sets",
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/productos/set-deportivo.jpg"
+    }
+  ],
+  "categories": [
+    { "id": "all", "name": "Todos" },
+    { "id": "remeras", "name": "Remeras" },
+    { "id": "buzos", "name": "Buzos" },
+    { "id": "pantalones", "name": "Pantalones" },
+    { "id": "camperas", "name": "Camperas" },
+    { "id": "shorts", "name": "Shorts" },
+    { "id": "sets", "name": "Sets" }
+  ],
+  "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+  "colors": [
+    { "id": "negro", "name": "Negro", "hex": "#000000" },
+    { "id": "blanco", "name": "Blanco", "hex": "#FFFFFF" },
+    { "id": "gris", "name": "Gris", "hex": "#808080" }
+  ]
+}

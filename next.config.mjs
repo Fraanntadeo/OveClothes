@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Descomenta y cambia 'ove-clothes' por el nombre de tu repositorio en GitHub
-  // basePath: '/ove-clothes',
-  // assetPrefix: '/ove-clothes/',
+  basePath: '/OveClothes',
+  assetPrefix: '/OveClothes/',
   typescript: {
     ignoreBuildErrors: true,
   },

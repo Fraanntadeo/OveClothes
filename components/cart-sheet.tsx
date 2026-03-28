@@ -85,7 +85,7 @@ export function CartSheet() {
           <span className="sr-only">Abrir carrito</span>
         </Button>
       </SheetTrigger>
-      <SheetContent aria-describedby={undefined} className="flex w-full flex-col sm:max-w-md">
+      <SheetContent className="flex w-full flex-col sm:max-w-md">
         <SheetHeader>
           <SheetTitle className="text-left text-lg font-medium tracking-wider text-[#000000]">
             Tu carrito ({totalItems})

@@ -180,7 +180,7 @@ export function ProductGrid() {
                   )}
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" aria-describedby={undefined} className="w-full max-w-sm">
+              <SheetContent side="right" className="w-full max-w-sm">
                 <SheetHeader>
                   <SheetTitle>Filtros</SheetTitle>
                   <SheetDescription>

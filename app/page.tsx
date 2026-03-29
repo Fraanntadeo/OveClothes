@@ -1,9 +1,9 @@
-import { Navbar } from "@/components/navbar"
-import { Hero } from "@/components/hero"
-import { Features } from "@/components/features"
-import { Categories } from "@/components/categories"
-import { ProductGrid } from "@/components/product-grid"
-import { Footer } from "@/components/footer"
+import { Navbar } from "@/components/navbar";
+import { Hero } from "@/components/hero";
+import { Features } from "@/components/features";
+import { Categories } from "@/components/categories";
+import { ProductGrid } from "@/components/product-grid";
+import { Footer } from "@/components/footer";
 
 export default function HomePage() {
   return (
@@ -26,5 +26,5 @@ export default function HomePage() {
       {/* Footer with gradient */}
       <Footer />
     </div>
-  )
+  );
 }

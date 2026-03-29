@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
+
+// Configuración condicional según el entorno
+const isGitHubPages = process.env.DEPLOY_TARGET === "github-pages";
+
 const nextConfig = {
-  output: 'export',
-  basePath: '/OveClothes',
-  assetPrefix: '/OveClothes/',
+  output: "export",
+  ...(isGitHubPages && {
+    basePath: "/OveClothes",
+    assetPrefix: "/OveClothes/",
+  }),
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -10,6 +16,6 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-}
+};
 
-export default nextConfig
+export default nextConfig;

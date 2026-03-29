@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+/*import { Analytics } from '@vercel/analytics/next'*/
 import './globals.css'
 
 const inter = Inter({ 
@@ -11,7 +11,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Ove Clothes | Ropa Urbana Argentina',
   description: 'Ropa urbana minimalista hecha en Argentina. Diseños modernos, calidad premium. Envíos a todo el país.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -40,7 +39,7 @@ export default function RootLayout({
     <html lang="es-AR">
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   )

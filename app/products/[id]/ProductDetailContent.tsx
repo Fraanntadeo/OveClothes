@@ -52,13 +52,13 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
 
   if (!product) {
     return (
-      <div className="min-h-screen bg-[#FFFFFF] px-4 py-20">
+      <div className="min-h-screen bg-[#0F0F0F] px-4 py-20">
         <div className="mx-auto max-w-7xl text-center">
-          <h1 className="mb-4 text-3xl font-bold text-[#000000]">
+          <h1 className="mb-4 text-3xl font-bold text-[#FFFFFF]">
             Producto no encontrado
           </h1>
           <Link href="/">
-            <Button className="bg-[#000000] text-[#FFFFFF] hover:bg-[#1a1a1a]">
+            <Button className="bg-[#FFFFFF] text-[#000000] hover:bg-[#F5F5F5]">
               Volver al inicio
             </Button>
           </Link>
@@ -79,15 +79,15 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
   const currentStock = currentColor?.stock || 5;
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF]">
+    <div className="min-h-screen bg-[#0F0F0F]">
       {/* Header */}
-      <div className="sticky top-0 z-40 border-b border-[#E5E5E5] bg-[#FFFFFF]">
+      <div className="sticky top-0 z-40 border-b border-[#2A2A2A] bg-[#1A1A1A]">
         <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-4 lg:px-8">
           <Link href="/">
             <Button
               variant="ghost"
               size="icon"
-              className="text-[#000000] hover:bg-[#000000]/5"
+              className="text-[#FFFFFF] hover:bg-[#FFFFFF]/10"
             >
               <ArrowLeft className="size-5" />
             </Button>
@@ -104,7 +104,7 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
               {[1, 2, 3, 4].map((i) => (
                 <div
                   key={i}
-                  className="h-20 w-20 rounded-lg bg-[#F5F5F5] overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#000000] transition-all"
+                  className="h-20 w-20 rounded-lg bg-[#1A1A1A] overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#FFFFFF] transition-all"
                 >
                   <Image
                     src={currentImage}
@@ -115,13 +115,13 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
                   />
                 </div>
               ))}
-              <button className="h-6 flex items-center justify-center text-[#808080] hover:text-[#000000]">
+              <button className="h-6 flex items-center justify-center text-[#A0A0A0] hover:text-[#FFFFFF]">
                 <ChevronDown className="size-4" />
               </button>
             </div>
 
             {/* Main Image */}
-            <div className="flex-1 bg-[#F5F5F5] rounded-lg overflow-hidden min-h-96 flex items-center justify-center">
+            <div className="flex-1 bg-[#1A1A1A] rounded-lg overflow-hidden min-h-96 flex items-center justify-center">
               <Image
                 src={currentImage}
                 alt={product.name}
@@ -137,10 +137,10 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
           <div className="flex flex-col gap-6">
             {/* Title & Category */}
             <div>
-              <h1 className="text-3xl font-bold text-[#000000] mb-2">
+              <h1 className="text-3xl font-bold text-[#FFFFFF] mb-2">
                 {product.name}
               </h1>
-              <p className="text-sm text-[#808080] uppercase tracking-wide">
+              <p className="text-sm text-[#A0A0A0] uppercase tracking-wide">
                 {product.category}
               </p>
             </div>
@@ -148,16 +148,16 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
             {/* Price */}
             <div>
               <div className="flex items-baseline gap-3 mb-2">
-                <span className="text-4xl font-bold text-[#000000]">
+                <span className="text-4xl font-bold text-[#FFFFFF]">
                   ${product.price.toLocaleString()}
                 </span>
                 {product.originalPrice && (
-                  <span className="text-sm line-through text-[#808080]">
+                  <span className="text-sm line-through text-[#A0A0A0]">
                     ${product.originalPrice.toLocaleString()}
                   </span>
                 )}
               </div>
-              <p className="text-xs text-[#808080]">
+              <p className="text-xs text-[#A0A0A0]">
                 Precio sin impuestos ${(product.price * 0.75).toLocaleString()}
               </p>
               {product.originalPrice && (
@@ -168,7 +168,7 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
             </div>
 
             {/* Description */}
-            <p className="text-sm text-[#000000]/70 leading-relaxed">
+            <p className="text-sm text-[#A0A0A0]/70 leading-relaxed">
               Prenda de alta calidad, confeccionada con materiales premium.
               Diseño moderno y cómodo para usar en cualquier ocasión. Fabricado
               100% en Argentina.
@@ -176,7 +176,7 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
 
             {/* Color Selection */}
             <div>
-              <label className="text-sm font-semibold text-[#000000] mb-3 block">
+              <label className="text-sm font-semibold text-[#FFFFFF] mb-3 block">
                 Color: <span className="font-light">{selectedColor}</span>
               </label>
               <div className="flex gap-3">
@@ -186,8 +186,8 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
                     onClick={() => setSelectedColor(color.name)}
                     className={`h-8 w-8 rounded-full border-2 transition-all flex items-center justify-center ${
                       selectedColor === color.name
-                        ? "border-[#000000]"
-                        : "border-[#E5E5E5]"
+                        ? "border-[#FFFFFF]"
+                        : "border-[#2A2A2A]"
                     }`}
                     style={{ backgroundColor: color.hex }}
                     title={color.name}
@@ -204,7 +204,7 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
 
             {/* Size Selection */}
             <div>
-              <label className="text-sm font-semibold text-[#000000] mb-3 block">
+              <label className="text-sm font-semibold text-[#FFFFFF] mb-3 block">
                 Talle: <span className="font-light">{selectedSize || "-"}</span>
               </label>
               <div className="flex flex-wrap gap-2">
@@ -214,8 +214,8 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
                     onClick={() => setSelectedSize(size)}
                     className={`h-10 w-10 rounded border-2 text-sm font-medium transition-all flex items-center justify-center ${
                       selectedSize === size
-                        ? "border-[#000000] bg-[#000000] text-[#FFFFFF]"
-                        : "border-[#E5E5E5] text-[#000000] hover:border-[#000000]"
+                        ? "border-[#FFFFFF] bg-[#FFFFFF] text-[#000000]"
+                        : "border-[#2A2A2A] text-[#FFFFFF] hover:border-[#FFFFFF]"
                     }`}
                   >
                     {size}
@@ -226,22 +226,22 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
 
             {/* Quantity */}
             <div className="flex items-center gap-4">
-              <label className="text-sm font-semibold text-[#000000]">
+              <label className="text-sm font-semibold text-[#FFFFFF]">
                 Cantidad:
               </label>
-              <div className="flex items-center border border-[#E5E5E5]">
+              <div className="flex items-center border border-[#2A2A2A]">
                 <button
                   onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="flex h-10 w-10 items-center justify-center text-[#808080] hover:bg-[#F5F5F5]"
+                  className="flex h-10 w-10 items-center justify-center text-[#A0A0A0] hover:bg-[#1A1A1A]"
                 >
                   −
                 </button>
-                <span className="w-12 text-center font-semibold text-[#000000]">
+                <span className="w-12 text-center font-semibold text-[#FFFFFF]">
                   {quantity}
                 </span>
                 <button
                   onClick={() => setQuantity(quantity + 1)}
-                  className="flex h-10 w-10 items-center justify-center text-[#808080] hover:bg-[#F5F5F5]"
+                  className="flex h-10 w-10 items-center justify-center text-[#A0A0A0] hover:bg-[#1A1A1A]"
                 >
                   +
                 </button>
@@ -265,7 +265,7 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
                   );
                 }}
                 disabled={currentStock === 0}
-                className="flex-1 h-12 bg-[#000000] text-[#FFFFFF] hover:bg-[#1a1a1a] text-base font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex-1 h-12 bg-[#FFFFFF] text-[#000000] hover:bg-[#F5F5F5] text-base font-medium disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <ShoppingCart className="mr-2 size-5" />
                 Agregar al carrito
@@ -277,18 +277,18 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
                 className={`h-12 w-12 border-2 ${
                   isFavorite
                     ? "border-[#FF6B6B] bg-[#FF6B6B]/10"
-                    : "border-[#E5E5E5]"
+                    : "border-[#2A2A2A]"
                 }`}
               >
                 <Heart
-                  className={`size-5 ${isFavorite ? "fill-[#FF6B6B] text-[#FF6B6B]" : "text-[#000000]"}`}
+                  className={`size-5 ${isFavorite ? "fill-[#FF6B6B] text-[#FF6B6B]" : "text-[#FFFFFF]"}`}
                 />
               </Button>
             </div>
 
             {/* Stock */}
             <p
-              className={`text-sm ${currentStock > 0 ? "text-[#808080]" : "text-[#FF6B6B] font-semibold"}`}
+              className={`text-sm ${currentStock > 0 ? "text-[#A0A0A0]" : "text-[#FF6B6B] font-semibold"}`}
             >
               {currentStock > 0
                 ? `✓ ${currentStock} en stock`
@@ -296,17 +296,17 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
             </p>
 
             {/* Divider */}
-            <div className="border-t border-[#E5E5E5]" />
+            <div className="border-t border-[#2A2A2A]" />
 
             {/* Info Section */}
             <div className="space-y-3">
               <div className="flex gap-3">
                 <div className="text-xl">🚚</div>
                 <div>
-                  <p className="text-sm font-semibold text-[#000000]">
+                  <p className="text-sm font-semibold text-[#FFFFFF]">
                     Envío rápido
                   </p>
-                  <p className="text-xs text-[#808080]">
+                  <p className="text-xs text-[#A0A0A0]">
                     Envío gratis en CABA en compras mayores a $30.000
                   </p>
                 </div>
@@ -314,10 +314,10 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
               <div className="flex gap-3">
                 <div className="text-xl">✓</div>
                 <div>
-                  <p className="text-sm font-semibold text-[#000000]">
+                  <p className="text-sm font-semibold text-[#FFFFFF]">
                     Garantía
                   </p>
-                  <p className="text-xs text-[#808080]">
+                  <p className="text-xs text-[#A0A0A0]">
                     100% original - Producción local argentina
                   </p>
                 </div>

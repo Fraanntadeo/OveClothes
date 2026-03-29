@@ -14,11 +14,11 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-[90vh] bg-gradient-to-b from-[#000000] via-[#1a1a1a] to-[#808080]"
+      className="relative min-h-[90vh] bg-linear-to-b from-[#0F0F0F] via-[#1a1a1a] to-[#1A1A1A]"
     >
       <div className="mx-auto flex min-h-[90vh] max-w-7xl flex-col items-center justify-center px-4 py-20 text-center lg:px-8">
         {/* Badge */}
-        <span className="mb-6 border border-[#808080]/50 px-4 py-2 text-xs font-light uppercase tracking-[0.3em] text-[#FFFFFF]/80">
+        <span className="mb-6 border border-[#2A2A2A] px-4 py-2 text-xs font-light uppercase tracking-[0.3em] text-[#FFFFFF]/80">
           Hecho en Argentina
         </span>
 
@@ -65,12 +65,12 @@ export function Hero() {
             <p className="text-3xl font-bold text-[#FFFFFF]">500+</p>
             <p className="mt-1 text-sm text-[#FFFFFF]/60">Clientes felices</p>
           </div>
-          <div className="h-12 w-px bg-[#808080]/30" />
+          <div className="h-12 w-px bg-[#2A2A2A]" />
           <div>
             <p className="text-3xl font-bold text-[#FFFFFF]">100%</p>
             <p className="mt-1 text-sm text-[#FFFFFF]/60">Producción local</p>
           </div>
-          <div className="h-12 w-px bg-[#808080]/30" />
+          <div className="h-12 w-px bg-[#2A2A2A]" />
           <div>
             <p className="text-3xl font-bold text-[#FFFFFF]">24hs</p>
             <p className="mt-1 text-sm text-[#FFFFFF]/60">Envío en CABA</p>
@@ -81,10 +81,10 @@ export function Hero() {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <div className="flex flex-col items-center gap-2">
-          <span className="text-xs tracking-wider text-[#FFFFFF]/50">
+          <span className="text-xs tracking-wider text-[#A0A0A0]">
             Scrolleá
           </span>
-          <div className="h-12 w-px animate-pulse bg-gradient-to-b from-[#FFFFFF]/50 to-transparent" />
+          <div className="h-12 w-px animate-pulse bg-linear-to-b from-[#FFFFFF]/40 to-transparent" />
         </div>
       </div>
     </section>

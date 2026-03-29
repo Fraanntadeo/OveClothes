@@ -45,7 +45,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Image Container */}
-        <div className="relative aspect-[3/4] overflow-hidden bg-[#F5F5F5]">
+        <div className="relative aspect-[3/4] overflow-hidden bg-[#1A1A1A]">
           {/* Product Image */}
           {product.image && !imageError ? (
             <Image
@@ -56,10 +56,10 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
               onError={() => setImageError(true)}
             />
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-[#E5E5E5] to-[#D5D5D5] transition-transform duration-500 group-hover:scale-105">
+            <div className="absolute inset-0 flex items-center justify-center bg-linear-to-b from-[#2A2A2A] to-[#1A1A1A] transition-transform duration-500 group-hover:scale-105">
               <div className="text-center">
-                <div className="mx-auto mb-2 size-16 rounded-full bg-[#808080]/20" />
-                <p className="text-xs text-[#808080]">{product.category}</p>
+                <div className="mx-auto mb-2 size-16 rounded-full bg-[#A0A0A0]/20" />
+                <p className="text-xs text-[#A0A0A0]">{product.category}</p>
               </div>
             </div>
           )}
@@ -80,23 +80,23 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
           {/* Favorite Button */}
           <button
             onClick={() => setIsFavorite(!isFavorite)}
-            className="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-[#FFFFFF]/90 text-[#000000] opacity-0 transition-opacity hover:bg-[#FFFFFF] group-hover:opacity-100"
+            className="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-[#2A2A2A]/90 text-[#FF6B6B] opacity-0 transition-opacity hover:bg-[#2A2A2A] group-hover:opacity-100"
             aria-label={
               isFavorite ? "Quitar de favoritos" : "Añadir a favoritos"
             }
           >
-            <Heart className={`size-4 ${isFavorite ? "fill-[#000000]" : ""}`} />
+            <Heart className={`size-4 ${isFavorite ? "fill-[#FF6B6B]" : ""}`} />
           </button>
 
           {/* Quick Add Button */}
           <div
-            className={`absolute bottom-0 left-0 right-0 bg-[#000000]/95 p-3 transition-transform duration-300 ${
+            className={`absolute bottom-0 left-0 right-0 bg-[#2A2A2A]/95 p-3 transition-transform duration-300 ${
               isHovered ? "translate-y-0" : "translate-y-full"
             }`}
           >
             <Button
               variant="ghost"
-              className="w-full h-10 text-sm font-medium tracking-wider text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#000000]"
+              className="w-full h-10 text-sm font-medium tracking-wider text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2A2A2A]"
               onClick={() => onAddToCart?.(product)}
             >
               <Plus className="mr-2 size-4" />
@@ -108,18 +108,18 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
         {/* Product Info */}
         <CardContent className="px-0 pt-4">
           <div className="flex flex-col gap-1">
-            <span className="text-[10px] font-light uppercase tracking-wider text-[#808080]">
+            <span className="text-[10px] font-light uppercase tracking-wider text-[#A0A0A0]">
               {product.category}
             </span>
-            <h3 className="text-sm font-medium text-[#000000]">
+            <h3 className="text-sm font-medium text-[#FFFFFF]">
               {product.name}
             </h3>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold text-[#000000]">
+              <span className="text-sm font-semibold text-[#FFFFFF]">
                 {formatPrice(product.price)}
               </span>
               {product.originalPrice && (
-                <span className="text-sm text-[#808080] line-through">
+                <span className="text-sm text-[#A0A0A0] line-through">
                   {formatPrice(product.originalPrice)}
                 </span>
               )}
@@ -130,7 +130,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
                 {product.sizes.map((size) => (
                   <span
                     key={size}
-                    className="text-[10px] text-[#808080] border border-[#E5E5E5] px-1.5 py-0.5"
+                    className="text-[10px] text-[#A0A0A0] border border-[#2A2A2A] px-1.5 py-0.5"
                   >
                     {size}
                   </span>

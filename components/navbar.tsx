@@ -85,15 +85,15 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#000000]">
+    <header className="sticky top-0 z-50 w-full bg-[#1A1A1A] border-b border-[#2A2A2A]">
       {/* Search Bar — slides down when open */}
       {searchOpen && (
-        <div className="absolute inset-x-0 top-0 z-50 flex h-16 items-center gap-3 bg-[#000000] px-4 lg:px-8">
+        <div className="absolute inset-x-0 top-0 z-50 flex h-16 items-center gap-3 bg-[#1A1A1A] border-b border-[#2A2A2A] px-4 lg:px-8">
           <form
             onSubmit={handleSearchSubmit}
             className="relative flex flex-1 items-center"
           >
-            <Search className="absolute left-3 size-4 text-[#808080]" />
+            <Search className="absolute left-3 size-4 text-[#A0A0A0]" />
             <Input
               ref={inputRef}
               value={query}
@@ -235,7 +235,7 @@ export function Navbar() {
           <CartSheet />
         </div>
       </nav>
-      <div className="flex h-14 items-center justify-center gap-2 bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-b border-[#808080]/20">
+      <div className="flex h-14 items-center justify-center gap-2 bg-linear-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-b border-[#2A2A2A]">
         <div className="flex items-center gap-2">
           <div className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF88] opacity-75"></span>

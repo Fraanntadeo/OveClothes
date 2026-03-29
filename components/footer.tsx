@@ -55,7 +55,7 @@ export function Footer() {
   return (
     <footer
       id="contacto"
-      className="bg-gradient-to-b from-[#808080] to-[#000000]"
+      className="bg-linear-to-b from-[#1A1A1A] to-[#0F0F0F]"
     >
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         {/* Newsletter Section */}

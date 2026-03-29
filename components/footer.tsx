@@ -58,31 +58,6 @@ export function Footer() {
       className="bg-linear-to-b from-[#1A1A1A] to-[#0F0F0F]"
     >
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        {/* Newsletter Section */}
-        <div className="py-12 lg:py-16">
-          <div className="mx-auto max-w-md text-center">
-            <h3 className="text-lg font-medium tracking-wider text-[#FFFFFF]">
-              Suscribite al newsletter
-            </h3>
-            <p className="mt-2 text-sm font-light text-[#FFFFFF]/70">
-              Recibí novedades, lanzamientos y descuentos exclusivos.
-            </p>
-            <form onSubmit={handleSubmit} className="mt-6 flex gap-2">
-              <Input
-                type="email"
-                placeholder="Tu email"
-                className="h-11 flex-1 border-[#FFFFFF]/30 bg-[#FFFFFF]/10 text-sm font-light text-[#FFFFFF] placeholder:text-[#FFFFFF]/50 focus-visible:ring-[#FFFFFF]"
-              />
-              <Button
-                type="submit"
-                className="h-11 bg-[#FFFFFF] px-6 text-sm font-medium tracking-wider text-[#000000] hover:bg-[#FFFFFF]/90"
-              >
-                Suscribir
-              </Button>
-            </form>
-          </div>
-        </div>
-
         <Separator className="bg-[#FFFFFF]/20" />
 
         {/* Links Grid */}

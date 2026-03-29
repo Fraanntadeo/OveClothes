@@ -7,7 +7,39 @@
       "category": "Remeras",
       "isNew": true,
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/remera-oversize.jpg"
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=650&fit=crop&q=80",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=650&fit=crop&q=80",
+          "stock": 5
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://acdn-us.mitiendanube.com/stores/003/588/275/products/captura-de-pantalla-2025-03-10-163552-33bd158224127cd24e17416353484855-1024-1024.webp",
+          "stock": 8
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://acdn-us.mitiendanube.com/stores/003/588/275/products/captura-de-pantalla-2025-03-10-163527-9254b8cb5a2d6d30d717416353226265-1024-1024.webp",
+          "stock": 3
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://acdn-us.mitiendanube.com/stores/003/588/275/products/captura-de-pantalla-2025-03-10-163449-f9c131701469251c4517416352898205-1024-1024.webp",
+          "stock": 6
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://acdn-us.mitiendanube.com/stores/003/588/275/products/captura-de-pantalla-2025-03-10-162933-66f7ec2df85c921e1617416351993722-1024-1024.webp",
+          "stock": 13
+        }
+      ]
     },
     {
       "id": "2",
@@ -15,7 +47,39 @@
       "price": 32000,
       "category": "Buzos",
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/buzo-hoodie.jpg"
+      "image": "https://images.unsplash.com/photo-1556821840-a63f89a85b1d?w=500&h=650&fit=crop&q=80",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1556821840-a63f89a85b1d?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1595777707802-c5c02e4b1f91?w=500&h=650&fit=crop&q=80",
+          "stock": 7
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1618886587407-d4c7fb6e7d5c?w=500&h=650&fit=crop&q=80",
+          "stock": 2
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1556821840-b9a84a4e77f9?w=500&h=650&fit=crop&q=80",
+          "stock": 9
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1605233134607-409849bee646?w=500&h=650&fit=crop&q=80",
+          "stock": 11
+        }
+      ]
     },
     {
       "id": "3",
@@ -23,7 +87,39 @@
       "price": 38500,
       "category": "Pantalones",
       "sizes": ["28", "30", "32", "34", "36"],
-      "image": "/productos/pantalon-cargo.jpg"
+      "image": "https://via.placeholder.com/500x750/1a3a5a/ffffff.jpg?text=Pantalon+Cargo",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1542272472-5e99aaf05a78?w=500&h=650&fit=crop&q=80",
+          "stock": 6
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1577215645519-f9db5c29f0ec?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?w=500&h=650&fit=crop&q=80",
+          "stock": 2
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1542378-ca00ca7cb57d?w=500&h=650&fit=crop&q=80",
+          "stock": 5
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=500&h=650&fit=crop&q=80",
+          "stock": 7
+        }
+      ]
     },
     {
       "id": "4",
@@ -32,7 +128,39 @@
       "originalPrice": 55000,
       "category": "Camperas",
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/campera-rompevientos.jpg"
+      "image": "https://via.placeholder.com/500x750/000000/808080.jpg?text=Campera+Rompevientos",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=650&fit=crop&q=80",
+          "stock": 8
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1539533057440-7814bdc82c2d?w=500&h=650&fit=crop&q=80",
+          "stock": 3
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=650&fit=crop&q=80",
+          "stock": 1
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1515222134207-3a85fb2ce338?w=500&h=650&fit=crop&q=80",
+          "stock": 6
+        }
+      ]
     },
     {
       "id": "5",
@@ -41,7 +169,39 @@
       "category": "Shorts",
       "isNew": true,
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/bermuda-urbana.jpg"
+      "image": "https://via.placeholder.com/500x750/4a4a4a/ffffff.jpg?text=Bermuda+Urbana",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1546307528-4d004a6f9a48?w=500&h=650&fit=crop&q=80",
+          "stock": 10
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=650&fit=crop&q=80",
+          "stock": 5
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1609335141480-da06e3fde0f8?w=500&h=650&fit=crop&q=80",
+          "stock": 3
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1527269307751-6f55f18624e0?w=500&h=650&fit=crop&q=80",
+          "stock": 7
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1612871437281-8eb91189a895?w=500&h=650&fit=crop&q=80",
+          "stock": 9
+        }
+      ]
     },
     {
       "id": "6",
@@ -49,7 +209,39 @@
       "price": 19500,
       "category": "Remeras",
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/remera-logo.jpg"
+      "image": "https://via.placeholder.com/500x750/ffffff/000000.jpg?text=Remera+Logo",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=650&fit=crop&q=80",
+          "stock": 6
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1609335141480-da06e3fde0f8?w=500&h=650&fit=crop&q=80",
+          "stock": 2
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=500&h=650&fit=crop&q=80",
+          "stock": 8
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1512081691857-612628c30c96?w=500&h=650&fit=crop&q=80",
+          "stock": 5
+        }
+      ]
     },
     {
       "id": "7",
@@ -57,7 +249,39 @@
       "price": 28000,
       "category": "Pantalones",
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/jogger-frisa.jpg"
+      "image": "https://via.placeholder.com/500x750/1a3a5a/ffffff.jpg?text=Jogger+Frisa",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1506629082632-401017062ae8?w=500&h=650&fit=crop&q=80",
+          "stock": 12
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1542272472-5e99aaf05a78?w=500&h=650&fit=crop&q=80",
+          "stock": 7
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1542378-ca00ca7cb57d?w=500&h=650&fit=crop&q=80",
+          "stock": 9
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=500&h=650&fit=crop&q=80",
+          "stock": 11
+        }
+      ]
     },
     {
       "id": "8",
@@ -66,7 +290,39 @@
       "originalPrice": 15000,
       "category": "Remeras",
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/musculosa.jpg"
+      "image": "https://via.placeholder.com/500x750/f5f5f5/000000.jpg?text=Musculosa",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=650&fit=crop&q=80",
+          "stock": 15
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=650&fit=crop&q=80",
+          "stock": 10
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1609335141480-da06e3fde0f8?w=500&h=650&fit=crop&q=80",
+          "stock": 5
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=500&h=650&fit=crop&q=80",
+          "stock": 12
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1512081691857-612628c30c96?w=500&h=650&fit=crop&q=80",
+          "stock": 8
+        }
+      ]
     },
     {
       "id": "9",
@@ -74,7 +330,39 @@
       "price": 29000,
       "category": "Buzos",
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/buzo-cuello.jpg"
+      "image": "https://via.placeholder.com/500x750/3a3a3a/ffffff.jpg?text=Buzo+Cuello",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1556821840-a63f89a85b1d?w=500&h=650&fit=crop&q=80",
+          "stock": 6
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1595777707802-c5c02e4b1f91?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1618886587407-d4c7fb6e7d5c?w=500&h=650&fit=crop&q=80",
+          "stock": 3
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1556821840-b9a84a4e77f9?w=500&h=650&fit=crop&q=80",
+          "stock": 7
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1605233134607-409849bee646?w=500&h=650&fit=crop&q=80",
+          "stock": 10
+        }
+      ]
     },
     {
       "id": "10",
@@ -83,7 +371,39 @@
       "category": "Pantalones",
       "isNew": true,
       "sizes": ["24", "26", "28", "30", "32"],
-      "image": "/productos/jean-mom.jpg"
+      "image": "https://via.placeholder.com/500x750/0a2a4a/ffffff.jpg?text=Jean+Mom",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=500&h=650&fit=crop&q=80",
+          "stock": 5
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1577215645519-f9db5c29f0ec?w=500&h=650&fit=crop&q=80",
+          "stock": 3
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?w=500&h=650&fit=crop&q=80",
+          "stock": 1
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1542378-ca00ca7cb57d?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=500&h=650&fit=crop&q=80",
+          "stock": 9
+        }
+      ]
     },
     {
       "id": "11",
@@ -91,7 +411,39 @@
       "price": 52000,
       "category": "Camperas",
       "sizes": ["S", "M", "L"],
-      "image": "/productos/campera-jean.jpg"
+      "image": "https://via.placeholder.com/500x750/1a3a5a/ffffff.jpg?text=Campera+Jean",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=650&fit=crop&q=80",
+          "stock": 7
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1539533057440-7814bdc82c2d?w=500&h=650&fit=crop&q=80",
+          "stock": 2
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=650&fit=crop&q=80",
+          "stock": 0
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=500&h=650&fit=crop&q=80",
+          "stock": 3
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1515222134207-3a85fb2ce338?w=500&h=650&fit=crop&q=80",
+          "stock": 5
+        }
+      ]
     },
     {
       "id": "12",
@@ -100,7 +452,39 @@
       "originalPrice": 58000,
       "category": "Sets",
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/productos/set-deportivo.jpg"
+      "image": "https://via.placeholder.com/500x750/2a2a3a/00ff88.jpg?text=Set+Deportivo",
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "#000000",
+          "image": "https://images.unsplash.com/photo-1556821840-a63f89a85b1d?w=500&h=650&fit=crop&q=80",
+          "stock": 8
+        },
+        {
+          "name": "Blanco",
+          "hex": "#FFFFFF",
+          "image": "https://images.unsplash.com/photo-1595777707802-c5c02e4b1f91?w=500&h=650&fit=crop&q=80",
+          "stock": 6
+        },
+        {
+          "name": "Rojo",
+          "hex": "#FF0000",
+          "image": "https://images.unsplash.com/photo-1618886587407-d4c7fb6e7d5c?w=500&h=650&fit=crop&q=80",
+          "stock": 4
+        },
+        {
+          "name": "Gris",
+          "hex": "#808080",
+          "image": "https://images.unsplash.com/photo-1556821840-b9a84a4e77f9?w=500&h=650&fit=crop&q=80",
+          "stock": 11
+        },
+        {
+          "name": "Azul",
+          "hex": "#0000FF",
+          "image": "https://images.unsplash.com/photo-1605233134607-409849bee646?w=500&h=650&fit=crop&q=80",
+          "stock": 14
+        }
+      ]
     }
   ],
   "categories": [

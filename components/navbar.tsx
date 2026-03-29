@@ -235,6 +235,17 @@ export function Navbar() {
           <CartSheet />
         </div>
       </nav>
+      <div className="flex h-14 items-center justify-center gap-2 bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-b border-[#808080]/20">
+        <div className="flex items-center gap-2">
+          <div className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF88] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00FF88]"></span>
+          </div>
+          <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#00FF88] drop-shadow-lg">
+            Página en desarrollo
+          </span>
+        </div>
+      </div>
     </header>
   );
 }

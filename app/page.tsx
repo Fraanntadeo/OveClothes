@@ -1,9 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { Features } from "@/components/features";
-import { Categories } from "@/components/categories";
-import { ProductGrid } from "@/components/product-grid";
-import { Footer } from "@/components/footer";
+import { ProductGridStore } from "@/components/product-grid-store";
 
 export default function HomePage() {
   return (
@@ -17,14 +15,13 @@ export default function HomePage() {
       {/* Features Bar */}
       <Features />
 
-      {/* Categories Section */}
-      <Categories />
-
       {/* Products Section */}
-      <ProductGrid />
-
-      {/* Footer with gradient */}
-      <Footer />
+      <section className="py-16 px-4 md:px-6 max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">
+          Nuestros Productos
+        </h2>
+        <ProductGridStore />
+      </section>
     </div>
   );
 }

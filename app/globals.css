@@ -125,3 +125,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .aspect-3\/4 {
+    aspect-ratio: 3 / 4;
+  }
+}

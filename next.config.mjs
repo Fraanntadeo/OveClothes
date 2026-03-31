@@ -4,8 +4,8 @@
 const isGitHubPages = process.env.DEPLOY_TARGET === "github-pages";
 
 const nextConfig = {
-  output: "export",
   ...(isGitHubPages && {
+    output: "export",
     basePath: "/OveClothes",
     assetPrefix: "/OveClothes/",
   }),

@@ -14,7 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { CartSheet } from "@/components/cart-sheet";
-import productsData from "@/data/products.json";
+import { getAllProducts } from "@/lib/products";
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -30,9 +30,10 @@ export function Navbar() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Filter products by query
+  const allProducts = getAllProducts();
   const results =
     query.trim().length >= 2
-      ? productsData.products.filter(
+      ? allProducts.filter(
           (p) =>
             p.name.toLowerCase().includes(query.toLowerCase()) ||
             p.category.toLowerCase().includes(query.toLowerCase()),

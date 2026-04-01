@@ -19,7 +19,7 @@ import {
   SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import productsData from "@/data/products.json";
+import { getAllProducts, getCategories } from "@/lib/products";
 
 export function ProductGrid() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -27,8 +27,11 @@ export function ProductGrid() {
   const [sortBy, setSortBy] = useState("newest");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  const products = productsData.products as Product[];
-  const categories = productsData.categories;
+  const products = getAllProducts() as Product[];
+  const categories = getCategories();
+
+  // Get all unique sizes from products
+  const allSizes = Array.from(new Set(products.flatMap((p) => p.sizes || [])));
 
   // Listen for filter events from Navbar and Footer
   useEffect(() => {
@@ -94,8 +97,8 @@ export function ProductGrid() {
           </SelectTrigger>
           <SelectContent>
             {categories.map((cat) => (
-              <SelectItem key={cat.id} value={cat.id}>
-                {cat.name}
+              <SelectItem key={cat} value={cat}>
+                {cat}
               </SelectItem>
             ))}
           </SelectContent>
@@ -113,7 +116,7 @@ export function ProductGrid() {
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="all">Todos los talles</SelectItem>
-            {productsData.sizes.map((size) => (
+            {allSizes.map((size) => (
               <SelectItem key={size} value={size}>
                 {size}
               </SelectItem>
@@ -208,8 +211,8 @@ export function ProductGrid() {
               </SelectTrigger>
               <SelectContent>
                 {categories.map((cat) => (
-                  <SelectItem key={cat.id} value={cat.id}>
-                    {cat.name}
+                  <SelectItem key={cat} value={cat}>
+                    {cat}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -221,7 +224,7 @@ export function ProductGrid() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">Todos</SelectItem>
-                {productsData.sizes.map((size) => (
+                {allSizes.map((size) => (
                   <SelectItem key={size} value={size}>
                     {size}
                   </SelectItem>

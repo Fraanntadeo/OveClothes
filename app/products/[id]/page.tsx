@@ -1,8 +1,8 @@
-import productsData from "@/data/products.json";
+import { getAllProducts, getProductById } from "@/lib/products";
 import { ProductDetailContent } from "./ProductDetailContent";
 
 export function generateStaticParams() {
-  return productsData.products.map((product) => ({
+  return getAllProducts().map((product) => ({
     id: product.id,
   }));
 }
@@ -17,6 +17,6 @@ export default async function ProductDetailPage({
   params,
 }: ProductDetailPageProps) {
   const { id } = await params;
-  const product = productsData.products.find((p) => p.id === id);
+  const product = getProductById(id);
   return <ProductDetailContent product={product} />;
 }

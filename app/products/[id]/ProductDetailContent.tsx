@@ -11,25 +11,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-interface ProductColor {
-  name: string;
-  hex: string;
-  image: string;
-  stock: number;
-}
-
-interface Product {
-  id: string;
-  name: string;
-  price: number;
-  originalPrice?: number;
-  image: string;
-  category: string;
-  isNew?: boolean;
-  sizes: string[];
-  colors?: ProductColor[];
-}
+import type { Product } from "@/lib/products";
 
 interface ProductDetailContentProps {
   product: Product | undefined;

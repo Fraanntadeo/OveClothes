@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-// Configuración condicional según el entorno
 const isGitHubPages = process.env.DEPLOY_TARGET === "github-pages";
 
 const nextConfig = {
@@ -8,6 +7,9 @@ const nextConfig = {
   ...(isGitHubPages && {
     basePath: "/OveClothes",
     assetPrefix: "/OveClothes/",
+    env: {
+      NEXT_PUBLIC_BASE_PATH: "/OveClothes",
+    },
   }),
   typescript: {
     ignoreBuildErrors: true,

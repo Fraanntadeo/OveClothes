@@ -5,10 +5,12 @@
 
 import { getColorPlaceholder } from "./image-utils";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export interface ProductColor {
   name: string;
   hex: string;
-  image: string; // Ruta local: /images/products/product-id/color-name.{jpg|png|webp}
+  image: string; // Ruta local: ${BASE}/images/products/product-id/color-name.{jpg|png|webp}
   stock: number;
 }
 
@@ -17,7 +19,7 @@ export interface Product {
   name: string;
   price: number;
   originalPrice?: number;
-  image: string; // Ruta local: /images/products/product-id/main.{jpg|png|webp}
+  image: string; // Ruta local: ${BASE}/images/products/product-id/main.{jpg|png|webp}
   category: "Remeras" | "Buzos" | "Pantalones" | "Camperas" | "Accesorios";
   description?: string;
   isNew?: boolean;
@@ -28,7 +30,7 @@ export interface Product {
 /**
  * Base de datos de productos
  * Para agregar imágenes:
- * 1. Crea una carpeta en public/images/products/{product-id}/
+ * 1. Crea una carpeta en public${BASE}/images/products/{product-id}/
  * 2. Agrega las imágenes (main.{jpg|png|webp} para portada, y color-name.{jpg|png|webp} para colores)
  * 3. Actualiza las rutas en el objeto product
  *
@@ -42,37 +44,37 @@ export const products: Product[] = [
     category: "Remeras",
     isNew: true,
     sizes: ["S", "M", "L", "XL"],
-    image: "/images/products/1/main.jpg",
+    image: "${BASE}/images/products/1/main.jpg",
     description: "Remera oversize 100% algodón, cómoda y versátil",
     colors: [
       {
         name: "Negro",
         hex: "#000000",
-        image: "/images/products/1/negro.jpg",
+        image: "${BASE}/images/products/1/negro.jpg",
         stock: 5,
       },
       {
         name: "Blanco",
         hex: "#FFFFFF",
-        image: "/images/products/1/blanco.jpg",
+        image: "${BASE}/images/products/1/blanco.jpg",
         stock: 8,
       },
       {
         name: "Rojo",
         hex: "#FF0000",
-        image: "/images/products/1/rojo.jpg",
+        image: "${BASE}/images/products/1/rojo.jpg",
         stock: 3,
       },
       {
         name: "Gris",
         hex: "#808080",
-        image: "/images/products/1/gris.jpg",
+        image: "${BASE}/images/products/1/gris.jpg",
         stock: 6,
       },
       {
         name: "Azul",
         hex: "#0000FF",
-        image: "/images/products/1/azul.jpg",
+        image: "${BASE}/images/products/1/azul.jpg",
         stock: 13,
       },
     ],

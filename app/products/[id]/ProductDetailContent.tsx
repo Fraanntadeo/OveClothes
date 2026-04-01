@@ -83,23 +83,25 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
           <div className="flex gap-4">
             {/* Thumbnails */}
             <div className="flex flex-col gap-2">
-              {[1, 2, 3, 4].map((i) => (
+              {product?.colors?.map((color) => (
                 <div
-                  key={i}
-                  className="h-20 w-20 rounded-lg bg-[#1A1A1A] overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#FFFFFF] transition-all"
+                  key={color.name}
+                  onClick={() => setSelectedColor(color.name)}
+                  className={`h-20 w-20 rounded-lg bg-[#1A1A1A] overflow-hidden cursor-pointer border-2 transition-all ${
+                    selectedColor === color.name
+                      ? "border-[#FFFFFF]"
+                      : "border-transparent hover:border-[#FFFFFF]/50"
+                  }`}
                 >
                   <Image
-                    src={currentImage}
-                    alt={`Variante ${i}`}
+                    src={color.image}
+                    alt={color.name}
                     width={80}
                     height={80}
                     className="object-cover w-full h-full"
                   />
                 </div>
               ))}
-              <button className="h-6 flex items-center justify-center text-[#A0A0A0] hover:text-[#FFFFFF]">
-                <ChevronDown className="size-4" />
-              </button>
             </div>
 
             {/* Main Image */}
@@ -235,16 +237,19 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
               <Button
                 onClick={() => {
                   if (!selectedSize) {
-                    alert("Por favor selecciona un talle");
+                    alert("Por favor seleccioná un talle");
                     return;
                   }
                   if (currentStock === 0) {
                     alert("Este color no tiene stock disponible");
                     return;
                   }
-                  alert(
-                    `✓ ${quantity} item(s) de ${product.name} en color ${selectedColor}, talle ${selectedSize}\n\nEl carrito estará disponible pronto.`,
+                  const precioTotal = (product.price * quantity).toLocaleString(
+                    "es-AR",
                   );
+                  const mensaje = `Hola! Me interesa comprar:\n\n*${product.name}*\nColor: ${selectedColor}\nTalle: ${selectedSize}\nCantidad: ${quantity}\nPrecio total: $${precioTotal}\n\n¿Tienen disponibilidad?`;
+                  const url = `https://wa.me/5491157185820?text=${encodeURIComponent(mensaje)}`;
+                  window.open(url, "_blank");
                 }}
                 disabled={currentStock === 0}
                 className="flex-1 h-12 bg-[#FFFFFF] text-[#000000] hover:bg-[#F5F5F5] text-base font-medium disabled:opacity-50 disabled:cursor-not-allowed"

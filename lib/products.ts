@@ -48,25 +48,25 @@ export const products: Product[] = [
       {
         name: "Negro",
         hex: "#000000",
-        image: "/images/products/1/main.jpg", // Usar main.jpg como fallback temporal
+        image: "/images/products/1/negro.jpg",
         stock: 5,
       },
       {
         name: "Blanco",
         hex: "#FFFFFF",
-        image: "/images/products/1/main.jpg", // Usar main.jpg como fallback temporal
+        image: "/images/products/1/blanco.jpg",
         stock: 8,
       },
       {
         name: "Rojo",
         hex: "#FF0000",
-        image: "/images/products/1/main.jpg", // Usar main.jpg como fallback temporal
+        image: "/images/products/1/rojo.jpg",
         stock: 3,
       },
       {
         name: "Gris",
         hex: "#808080",
-        image: "/images/products/1/main.jpg", // Usar main.jpg como fallback temporal
+        image: "/images/products/1/gris.jpg",
         stock: 6,
       },
       {

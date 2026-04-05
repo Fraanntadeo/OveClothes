@@ -19,7 +19,7 @@ import { getAllProducts } from "@/lib/products";
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
   { href: "#productos", label: "Productos" },
-  { href: "#nosotros", label: "Nosotros" },
+  { href: "/nosotros", label: "Nosotros" },
   { href: "#contacto", label: "Contacto" },
 ];
 
@@ -54,6 +54,11 @@ export function Navbar() {
     href: string,
   ) => {
     e.preventDefault();
+    if (href.startsWith("/")) {
+      window.location.href = href;
+      setIsOpen(false);
+      return;
+    }
     const element = document.querySelector(href);
     if (element) element.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);

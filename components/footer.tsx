@@ -22,7 +22,7 @@ const footerLinks = {
     { label: "Preguntas frecuentes", href: "#contacto" },
   ],
   empresa: [
-    { label: "Sobre nosotros", href: "#nosotros" },
+    { label: "Sobre nosotros", href: "/nosotros" },
     { label: "Contacto", href: "#contacto" },
     { label: "Nuestros productos", href: "#productos" },
   ],

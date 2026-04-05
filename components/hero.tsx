@@ -62,7 +62,7 @@ export function Hero() {
         {/* Stats */}
         <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-center md:gap-16">
           <div>
-            <p className="text-3xl font-bold text-[#FFFFFF]">500+</p>
+            <p className="text-3xl font-bold text-[#FFFFFF]">100+</p>
             <p className="mt-1 text-sm text-[#FFFFFF]/60">Clientes felices</p>
           </div>
           <div className="h-12 w-px bg-[#2A2A2A]" />

@@ -16,10 +16,11 @@ import {
 import { CartSheet } from "@/components/cart-sheet";
 import { getAllProducts } from "@/lib/products";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
   { href: "#productos", label: "Productos" },
-  { href: "/nosotros", label: "Nosotros" },
+  { href: `${BASE}/nosotros/`, label: "Nosotros" },
   { href: "#contacto", label: "Contacto" },
 ];
 

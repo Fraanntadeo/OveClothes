@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const footerLinks = {
   tienda: [
     { label: "Remeras", href: "#productos", filter: "remeras" },
@@ -22,7 +23,7 @@ const footerLinks = {
     { label: "Preguntas frecuentes", href: "#contacto" },
   ],
   empresa: [
-    { label: "Sobre nosotros", href: "/nosotros" },
+    { label: "Sobre nosotros", href: `${BASE}/nosotros/` },
     { label: "Contacto", href: "#contacto" },
     { label: "Nuestros productos", href: "#productos" },
   ],
